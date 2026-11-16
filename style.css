@@ -190,3 +190,9 @@ h3{letter-spacing:-.45px;word-spacing:.08em}
     gap:18px!important;
   }
 }
+
+
+/* Give the WhatsApp CTA a little more breathing room on its right edge */
+.contact-actions .button-light{
+  padding-right:32px!important;
+}
