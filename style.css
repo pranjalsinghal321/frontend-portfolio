@@ -120,3 +120,23 @@ h3{letter-spacing:-.45px;word-spacing:.08em}
 .timeline-content{grid-column:1;min-height:0;padding:18px}
 .timeline-dot{left:-6px;top:2px}
 }
+
+
+/* Final polish: improve heading readability and tighten the experience timeline */
+.skill-card h3,.timeline-content h3{letter-spacing:0!important;word-spacing:.14em!important}
+.skill-card h3{font-size:20px;line-height:1.45;margin-bottom:16px}
+.skill-card{min-height:285px}
+.skill-card p{min-height:58px;line-height:1.75}
+#experience .timeline{max-width:920px;margin:0 auto;border-left:1px solid rgba(177,174,255,.32)}
+#experience .timeline-item{grid-template-columns:155px minmax(0,1fr);gap:22px;padding:0 0 30px 28px;align-items:start}
+#experience .timeline-date{padding-top:22px;font-size:10px;letter-spacing:.8px;white-space:nowrap;text-align:right}
+#experience .timeline-content{padding:22px 26px;min-height:132px}
+#experience .timeline-content h3{font-size:21px;line-height:1.4;margin-bottom:9px}
+#experience .timeline-dot{top:25px}
+@media(max-width:700px){
+ .skill-card{min-height:0}
+ #experience .timeline-item{grid-template-columns:1fr;gap:7px;padding-left:24px;padding-bottom:26px}
+ #experience .timeline-date{text-align:left;padding-top:0;white-space:normal;font-size:10px}
+ #experience .timeline-content{padding:18px;min-height:0}
+ #experience .timeline-dot{top:2px}
+}
