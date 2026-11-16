@@ -90,3 +90,33 @@ h1{font-size:clamp(44px,5.4vw,72px);line-height:1.08;margin-bottom:25px;max-widt
 @media(max-width:850px){.hero{grid-template-columns:1fr;gap:20px;padding-top:80px}.hero-art{height:370px;max-width:600px;width:100%;margin:auto}.hero-copy{max-width:700px}.scroll-cue{display:none}.about-grid{gap:45px}.section-heading{align-items:start;flex-direction:column}.section-intro{max-width:560px}.skill-grid{grid-template-columns:1fr 1fr}.skill-card:last-child{grid-column:span 2}.project-visual{height:230px}}
 @media(max-width:600px){.container{width:min(100% - 36px,1160px)}.nav{height:68px}.menu-toggle{display:flex;flex-direction:column;gap:6px;padding:10px}.menu-toggle span{width:23px;height:2px;background:#fff;display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:22px 24px 26px;background:rgba(8,13,36,.98);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:20px}.nav-links.open{display:flex}.nav-links a:not(.nav-cta){color:#e3e0ff}.nav-cta{display:inline-block;text-align:center}.nav-resume{display:inline-block;text-align:center}.hero{min-height:auto;padding-top:65px;padding-bottom:70px}.eyebrow{font-size:10px}.hero h1{font-size:43px}.hero-description{font-size:15px}.hero-actions{margin:28px 0 35px}.hero-meta{gap:20px;justify-content:space-between}.hero-meta strong{font-size:21px}.hero-meta span{font-size:10px}.hero-art{height:300px}.code-card{width:95%;transform:rotate(-2deg)}.code-lines{font-size:9px;padding:20px 12px}.code-lines i{margin-right:6px}.floating-tag{padding:7px 10px;font-size:10px}.tag-html{left:0;top:25px}.tag-css{right:0;top:75px}.tag-js{right:15px;bottom:15px}.section{padding-top:78px;padding-bottom:78px}.about-grid{grid-template-columns:1fr;gap:25px}.about-grid h2,.section-heading h2{font-size:36px}.about-copy .lead{font-size:19px}.skill-grid{grid-template-columns:1fr}.skill-card:last-child{grid-column:auto}.skill-card p{min-height:0}.project-grid{grid-template-columns:1fr;gap:14px}.project-visual{height:220px}.timeline{margin-left:5px}.timeline-item{grid-template-columns:1fr 12px;gap:4px;padding-left:22px;padding-bottom:32px}.timeline-date{grid-column:1;font-size:9px}.timeline-content{grid-column:1;padding:16px}.timeline-dot{grid-column:2;grid-row:1}.contact-section{padding:75px 0 55px}.contact-section h2{font-size:42px}.contact-details{flex-direction:column;gap:12px}.footer-inner{flex-wrap:wrap;gap:12px}.footer p{width:calc(100% - 60px);margin:0}.footer-inner>a:not(.logo){margin-left:auto}.footer small{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+
+/* Skills and experience layout refinements */
+.section,#skills,#experience{width:100%;max-width:none}
+#skills .container,#experience .container{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+h3{letter-spacing:-.45px;word-spacing:.08em}
+.skill-card{min-height:310px;padding:32px 30px}
+.skill-card h3{font-size:21px;line-height:1.4;letter-spacing:-.3px;word-spacing:.12em;margin-bottom:14px}
+.skill-card p{line-height:1.8;min-height:56px}
+.chips{row-gap:10px}
+.section-heading{align-items:center}
+#experience .section-heading{margin-bottom:58px}
+.timeline{max-width:1000px;margin:0 auto;border-left:1px solid rgba(177,174,255,.32);padding-left:0}
+.timeline-item{grid-template-columns:190px minmax(0,1fr);gap:34px;padding:0 0 34px 34px;align-items:start}
+.timeline-date{grid-column:1;grid-row:1;text-align:right;padding-top:23px;line-height:1.5;white-space:nowrap;color:#c0c8e8;letter-spacing:1.1px}
+.timeline-content{grid-column:2;grid-row:1;min-height:145px;padding:24px 28px}
+.timeline-content h3{font-size:22px;line-height:1.3;letter-spacing:-.35px;word-spacing:.12em;margin-bottom:7px}
+.timeline-content .company{margin-bottom:12px}
+.timeline-content>p:last-child{line-height:1.8}
+.timeline-dot{left:-6px;top:27px}
+@media(max-width:700px){
+#skills .container,#experience .container{width:calc(100% - 36px)}
+.skill-card{min-height:0;padding:25px}
+.skill-card h3{font-size:20px}
+.timeline{margin-left:5px}
+.timeline-item{grid-template-columns:1fr;gap:8px;padding-left:24px;padding-bottom:28px}
+.timeline-date{grid-column:1;text-align:left;padding-top:0;white-space:normal;font-size:10px}
+.timeline-content{grid-column:1;min-height:0;padding:18px}
+.timeline-dot{left:-6px;top:2px}
+}
