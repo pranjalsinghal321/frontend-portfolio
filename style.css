@@ -167,3 +167,26 @@ h3{letter-spacing:-.45px;word-spacing:.08em}
  .footer-inner>a:not(.logo){margin-left:auto!important}
  .footer small{width:100%;white-space:normal}
 }
+
+
+/* Explicitly widen the gap between each contact item */
+.contact-section .contact-details{
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  flex-wrap:wrap!important;
+  column-gap:56px!important;
+  row-gap:22px!important;
+}
+.contact-section .contact-details a+a{
+  margin-left:0!important;
+  padding-left:0!important;
+  border-left:0!important;
+}
+@media(max-width:700px){
+  .contact-section .contact-details{
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:18px!important;
+  }
+}
